@@ -1,0 +1,92 @@
+.disclaimer {
+  color: $c-dark;
+  background-color: $c-light;
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    font-weight: 400;
+    color: $c-light;
+    background-color: transparent;
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    font-weight: 400;
+    color: $c-light;
+    background-color: transparent;
+  }
+
+  ul {
+    @include list-reset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.2;
+
+    @media (min-width: $stop-scaling) {
+      font-size: 12px;
+    }
+
+    @media (max-width: $tablet) and (orientation: portrait) {
+      font-size: 1rem;
+      opacity: 0.5;
+    }
+
+    @media (max-width: $mobile) and (orientation: landscape) {
+      font-size: 1rem;
+      opacity: 0.5;
+    }
+  }
+
+  li {
+    position: relative;
+    padding: 0 0.6rem;
+
+    @media (min-width: $stop-scaling) {
+      padding: 0 6px;
+    }
+
+    @media (max-width: $tablet) and (orientation: portrait) {
+      padding: 0 0.4rem;
+    }
+
+    @media (max-width: $mobile) and (orientation: landscape) {
+      padding: 0 0.4rem;
+    }
+
+    &::before {
+      content: "/";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    @include hover;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.9rem 0 0.7rem;
+    text-decoration: underline;
+    color: inherit;
+
+    @media (min-width: $stop-scaling) {
+      padding: 9px 0 7px;
+    }
+
+    @media (max-width: $tablet) and (orientation: portrait) {
+      padding: 0.9rem 0;
+    }
+
+    @media (max-width: $mobile) and (orientation: landscape) {
+      padding: 0.9rem 0;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "general/variables.scss";
+@import "~normalize.css/normalize.css";
+@import "~swiper/css/swiper.css";
+@import "general/mixins.scss";
+@import "general/fonts.scss";
+@import "general/scaffolding.scss";
+
+// Blocks
+@import "blocks/animation-screen.scss";
+@import "blocks/btn.scss";
+@import "blocks/chat.scss";
+@import "blocks/disclaimer.scss";
+@import "blocks/form.scss";
+@import "blocks/game.scss";
+@import "blocks/intro.scss";
+@import "blocks/page-header.scss";
+@import "blocks/prizes.scss";
+@import "blocks/result.scss";
+@import "blocks/rules.scss";
+@import "blocks/screen.scss";
+@import "blocks/slider.scss";
+@import "blocks/social-block.scss";

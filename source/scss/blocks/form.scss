@@ -1,0 +1,148 @@
+.form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form__label {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1.2rem;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  opacity: 0;
+  pointer-events: none;
+
+  @media (min-width: $stop-scaling) {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  @media (orientation: portrait) {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.form__field {
+  flex: none;
+  margin-right: 3rem;
+  padding: 0 5.6rem;
+  height: 6rem;
+  width: calc(100% - 21rem);
+  text-transform: uppercase;
+  font: inherit;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  color: $c-dark;
+  border: 0;
+  border-radius: 3rem;
+  outline: none;
+
+  &:focus {
+    border: 1px solid $c-purple;
+  }
+
+  @media (min-width: $stop-scaling) {
+    margin-right: 30px;
+    padding: 0 56px;
+    height: 60px;
+    width: calc(100% - 210px);
+    font-size: 24px;
+    border-radius: 30px;
+  }
+
+  @media (orientation: portrait) {
+    margin-right: 1rem;
+    padding: 0 2.5rem;
+    width: calc(100% - 5rem);
+    height: 4rem;
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: $tablet) and (orientation: landscape) {
+    width: calc(100% - 9rem);
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    margin-right: 1rem;
+    padding: 0 2.5rem;
+    width: calc(100% - 5rem);
+    height: 4rem;
+    font-size: 1.6rem;
+  }
+}
+
+.form__button {
+  flex-grow: 1;
+
+  @media (orientation: portrait) {
+    position: relative;
+    flex: none;
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    font-size: 0;
+  }
+
+  @media (max-width: $tablet) and (orientation: landscape) {
+    position: relative;
+    flex: none;
+    padding: 0;
+    width: 6rem;
+    height: 6rem;
+    font-size: 0;
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  svg {
+    @include center;
+    display: none;
+    width: 1.6rem;
+    height: 1.8rem;
+
+    @media (min-width: $stop-scaling) {
+      width: 16px;
+      height: 18px;
+    }
+
+    @media (orientation: portrait) {
+      display: block;
+    }
+
+    @media (max-width: $tablet) and (orientation: landscape) {
+      display: block;
+    }
+  }
+}
+
+.form--result {
+  .form__field {
+    width: calc(100% - 31rem);
+
+    @media (min-width: $stop-scaling) {
+      width: calc(100% - 310px);
+    }
+
+    @media (orientation: portrait) {
+      width: calc(100% - 5rem);
+    }
+
+    @media (max-width: $tablet) and (orientation: landscape) {
+      width: calc(100% - 9rem);
+    }
+
+    @media (max-width: $mobile) and (orientation: landscape) {
+      width: calc(100% - 5rem);
+    }
+  }
+}

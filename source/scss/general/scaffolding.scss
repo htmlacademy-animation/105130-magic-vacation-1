@@ -1,0 +1,101 @@
+:root {
+  font-size: 0.69445vw;
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    font-size: 3.125vw;
+
+    @media (min-width: $mobile) {
+      font-size: 2.5vw;
+    }
+  }
+
+  @media (max-width: $tablet) and (orientation: landscape) {
+    font-size: 1vw;
+
+    @media (max-width: $mobile) {
+      font-size: 2vw;
+    }
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: $font;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: $c-light;
+  background-color: $c-dark;
+  overflow: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (min-width: $stop-scaling) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    min-height: calc(var(--vh, 1vh) * 100);
+    font-size: 1.4rem;
+  }
+
+  &.menu-opened {
+    @media (max-width: $tablet) and (orientation: portrait) {
+      overflow: hidden;
+    }
+
+    @media (max-width: $mobile) and (orientation: landscape) {
+      overflow: hidden;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.svg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -100;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

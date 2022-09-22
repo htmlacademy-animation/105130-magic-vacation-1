@@ -1,0 +1,332 @@
+.prizes {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 14.6rem 0 7.7rem;
+  width: 100%;
+
+  @media (min-width: $stop-scaling) {
+    padding: 146px 0 65px;
+  }
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    padding: 5.9rem 0;
+  }
+
+  @media (max-width: $tablet) and (orientation: landscape) {
+    padding: 9rem 0 6rem;
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    padding: 5rem 0 1.5rem;
+  }
+}
+
+.prizes__title {
+  margin: 0 0 6rem;
+  text-transform: uppercase;
+  font-family: $font-alt;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 0.906;
+  letter-spacing: -0.04em;
+
+  @media (min-width: $stop-scaling) {
+    font-size: 48px;
+  }
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    margin-bottom: 1.8rem;
+    font-size: 3.6rem;
+  }
+
+  @media (max-width: $tablet) and (orientation: landscape) {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.prizes__lead {
+  margin-left: 5.8rem;
+  margin-bottom: -5.6rem;
+  max-width: 34rem;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  line-height: 1.2;
+
+  @media (min-width: $stop-scaling) {
+    margin-left: 58px;
+    margin-bottom: -56px;
+    max-width: 340px;
+    font-size: 24px;
+  }
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    margin-left: 2.5rem;
+    margin-bottom: 3.2rem;
+    max-width: 22rem;
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: $tablet) and (orientation: landscape) {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    max-width: 20rem;
+    font-size: 1.4rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.prizes__list {
+  @include list-reset;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: auto;
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto 0;
+    padding-left: 2rem;
+  }
+}
+
+.prizes__item {
+  margin-left: 7.5rem;
+
+  @media (min-width: $stop-scaling) {
+    margin-left: 75px;
+  }
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 0;
+    margin-bottom: 2.8rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $tablet) and (orientation: landscape) {
+    margin-left: 5rem;
+  }
+
+  &--journeys {
+    .prizes__icon {
+      position: relative;
+      left: -5.9rem;
+      bottom: -1.4rem;
+      width: 26.8rem;
+
+      @media (min-width: $stop-scaling) {
+        left: -59px;
+        bottom: -14px;
+        width: 268px;
+      }
+
+      @media (max-width: $tablet) and (orientation: portrait) {
+        left: 0;
+        bottom: 0;
+        width: 9.4rem;
+      }
+
+      @media (max-width: $tablet) and (orientation: landscape) {
+        left: -2rem;
+        width: 13rem;
+      }
+
+      @media (max-width: $mobile) and (orientation: landscape) {
+        width: 10rem;
+      }
+    }
+  }
+
+  &--cases {
+    margin-left: 7rem;
+
+    @media (min-width: $stop-scaling) {
+      margin-left: 70px;
+    }
+
+    @media (max-width: $tablet) and (orientation: portrait) {
+      margin-left: 0;
+      padding-left: 1.5rem;
+    }
+
+    .prizes__icon {
+      width: 18.8rem;
+
+      @media (min-width: $stop-scaling) {
+        width: 188px;
+      }
+
+      @media (max-width: $tablet) and (orientation: portrait) {
+        margin-right: 1.3rem;
+        width: 10.211rem;
+      }
+
+      @media (max-width: $tablet) and (orientation: landscape) {
+        width: 9.5rem;
+      }
+
+      @media (max-width: $mobile) and (orientation: landscape) {
+        width: 7rem;
+      }
+    }
+  }
+
+  &--codes {
+    @media (max-width: $tablet) and (orientation: portrait) {
+      padding-left: 0.8rem;
+    }
+
+    .prizes__icon {
+      width: 26rem;
+
+      @media (min-width: $stop-scaling) {
+        width: 260px;
+      }
+
+      @media (max-width: $tablet) and (orientation: portrait) {
+        width: 8.66rem;
+      }
+
+      @media (max-width: $tablet) and (orientation: landscape) {
+        width: 13rem;
+      }
+
+      @media (max-width: $mobile) and (orientation: landscape) {
+        width: 10rem;
+      }
+    }
+  }
+}
+
+.prizes__icon {
+  @media (max-width: $tablet) and (orientation: portrait) {
+    margin-right: 3.8rem;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.prizes__desc {
+  display: flex;
+  align-items: flex-end;
+  margin: 5.6rem 0 0 0;
+  font-size: 1.8rem;
+  line-height: 1.1;
+
+  @media (min-width: $stop-scaling) {
+    margin-top: 56px;
+    font-size: 18px;
+  }
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: -0.5rem;
+    margin-left: 0;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+
+  @media (max-width: $tablet) and (orientation: landscape) {
+    margin-top: 3rem;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    font-size: 0.8rem;
+  }
+
+  b {
+    font-family: $font-alt;
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 0.55;
+
+    @media (min-width: $stop-scaling) {
+      font-size: 120px;
+    }
+
+    @media (max-width: $tablet) and (orientation: portrait) {
+      font-size: 4.8rem;
+      line-height: 0.6;
+    }
+
+    @media (max-width: $tablet) and (orientation: landscape) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: $mobile) and (orientation: landscape) {
+      font-size: 3.5rem;
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 1.4rem;
+    max-width: 14rem;
+
+    @media (min-width: $stop-scaling) {
+      margin-left: 14px;
+      max-width: 140px;
+    }
+
+    @media (max-width: $tablet) and (orientation: portrait) {
+      margin-left: 0;
+      max-width: 11rem;
+    }
+
+    @media (max-width: $mobile) and (orientation: landscape) {
+      margin-left: 1rem;
+      max-width: 13rem;
+    }
+  }
+
+  svg {
+    flex: none;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+
+    @media (min-width: $stop-scaling) {
+      margin-left: 10px;
+      margin-bottom: 3px;
+      width: 10px;
+      height: 10px;
+    }
+
+    @media (max-width: $tablet) and (orientation: portrait) {
+      margin-left: 0;
+    }
+
+    @media (max-width: $mobile) and (orientation: landscape) {
+      width: 0.5rem;
+      height: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mysterious Vacation</title>
+</head>
+<body>
+
+  <header class="page-header js-header">
+    <div class="page-header__wrapper">
+      <a href="#" class="page-header__logo" aria-label="Перейти на страницу FJORD.Inc">
+        <svg width="100" height="15" viewBox="0 0 100 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.26 1.4V14H2.276V8.906H7.334V6.44H2.276V3.848H9.872V1.4H0.26ZM12.733 14.36C15.127 14.36 16.243 12.65 16.243 9.5V1.4H14.263V8.96C14.263 11.21 13.723 11.876 12.733 11.876C11.833 11.876 11.473 11.3 11.347 10.58L9.36702 10.94C9.63702 13.046 10.663 14.36 12.733 14.36ZM18.3918 7.7C18.3918 11.372 22.3878 14.36 27.3198 14.36C32.2518 14.36 36.2478 11.372 36.2478 7.7C36.2478 4.028 32.2518 1.04 27.3198 1.04C22.3878 1.04 18.3918 4.028 18.3918 7.7ZM20.6058 7.7C20.6058 5.378 23.6118 3.524 27.3198 3.524C30.9918 3.524 33.9798 5.378 33.9798 7.7C33.9798 10.004 30.9918 11.858 27.3198 11.858C23.6118 11.858 20.6058 10.004 20.6058 7.7ZM40.403 14V8.906H40.799L49.079 14.702V12.38L44.039 8.906H44.201C47.999 8.906 49.277 7.304 49.277 5.162C49.277 3.092 47.999 1.4 44.201 1.4H38.387V14H40.403ZM43.535 3.722C45.785 3.722 47.045 4.136 47.045 5.432C47.045 6.764 45.785 7.034 43.535 7.034H40.403V3.722H43.535ZM51.6936 1.382V14H57.8676C62.7456 14 66.7236 11.534 66.7236 7.7C66.7236 3.848 62.7456 1.382 57.8676 1.382H51.6936ZM53.7096 11.624V3.722H57.5436C61.5396 3.722 64.4916 5.018 64.4916 7.7C64.4916 10.238 61.5396 11.624 57.5436 11.624H53.7096ZM73.1832 14.018H74.9832V5H73.1832V14.018ZM72.9132 1.976C72.9132 2.57 73.3992 3.092 74.0832 3.092C74.7492 3.092 75.2352 2.57 75.2352 1.976C75.2352 1.382 74.7672 0.805999 74.0832 0.805999C73.3812 0.805999 72.9132 1.382 72.9132 1.976ZM76.7867 14H78.5687V9.104C78.7487 8.006 79.5947 6.962 81.0887 6.962C82.1147 6.962 83.2667 7.448 83.2667 9.554V14H85.0487V9.014C85.0487 6.152 83.2307 4.73 81.3587 4.73C79.9187 4.73 79.0727 5.558 78.5687 6.854V5H76.7867V14ZM90.9898 14.27C93.5098 14.27 95.3818 12.506 95.7238 10.328H94.0498C93.7258 11.3 92.6998 12.02 90.9898 12.02C88.8478 12.02 87.7678 10.922 87.7678 9.59C87.7678 8.24 88.8478 6.962 90.9898 6.962C92.7538 6.962 93.7978 7.844 94.0858 8.924H95.7418C95.4358 6.71 93.6178 4.73 90.9898 4.73C88.0918 4.73 86.1298 7.124 86.1298 9.59C86.1298 12.074 88.1278 14.27 90.9898 14.27ZM97.0693 12.938C97.0693 13.658 97.5553 14.144 98.2753 14.144C98.9953 14.144 99.4813 13.658 99.4813 12.938C99.4813 12.2 98.9953 11.714 98.2753 11.714C97.5553 11.714 97.0693 12.2 97.0693 12.938Z" fill="currentColor"/>
+        </svg>
+      </a>
+      <button class="page-header__toggler js-menu-toggler" type="button" aria-label="Управление мобильным меню"><span>Меню</span></button>
+      <nav class="page-header__nav">
+        <div class="page-header__menu js-menu" id="menu">
+          <ul>
+            <li>
+              <a class="js-menu-link active" href="#top" data-href="top">главная</a>
+            </li>
+            <li>
+              <a class="js-menu-link" href="#story" data-href="story">история</a>
+            </li>
+            <li>
+              <a class="js-menu-link" href="#prizes" data-href="prizes">призы</a>
+            </li>
+            <li>
+              <a class="js-menu-link" href="#rules" data-href="rules">правила</a>
+            </li>
+            <li>
+              <a class="js-menu-link" href="#game" data-href="game">игра</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-header__social">
+          <div class="social-block js-social-block">
+            <button class="social-block__toggler" aria-label="Управлять блоком с социальными кнопками">
+              <svg width="26" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6721 7.43664C21.6273 7.43664 23.213 5.85095 23.213 3.89566C23.213 1.94037 21.6273 0.354675 19.6721 0.354675C17.7168 0.354675 16.1311 1.94037 16.1311 3.89566C16.1311 4.19968 16.1728 4.49178 16.2458 4.77345L7.21751 8.95527C6.57519 8.05214 5.52303 7.46049 4.33078 7.46049C2.37549 7.46049 0.789795 9.04618 0.789795 11.0015C0.789795 12.9568 2.37549 14.5425 4.33078 14.5425C5.52303 14.5425 6.57668 13.9508 7.21751 13.0477L16.2458 17.2295C16.1743 17.5112 16.1311 17.8033 16.1311 18.1073C16.1311 20.0626 17.7168 21.6483 19.6721 21.6483C21.6273 21.6483 23.213 20.0626 23.213 18.1073C23.213 16.152 21.6273 14.5663 19.6721 14.5663C18.4798 14.5663 17.4262 15.158 16.7853 16.0611L7.75701 11.8793C7.82854 11.5976 7.87176 11.3055 7.87176 11.0015C7.87176 10.6974 7.83003 10.4053 7.75701 10.1237L16.7853 5.94186C17.4262 6.84499 18.4783 7.43664 19.6721 7.43664Z" fill="currentColor"/>
+              </svg>
+            </button>
+            <ul class="social-block__list">
+              <li>
+                <a class="social-block__link social-block__link--fb" href="#" aria-label="Мы на Facebook">
+                  <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.24646 16.9899H1.09275L1.05793 8.49828H0V5.30707H1.05793V3.81124C1.05793 1.42084 2.57654 0 5.21735 0H7.41758V3.18585H5.30841C4.28262 3.18585 4.2478 3.48582 4.2478 4.24914V5.30707H7.42964L7.16716 8.49828H4.2478V16.9899H4.24646Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-block__link social-block__link--insta" href="#" aria-label="Мы в Instagram">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0197 0H4.19806C2.14246 0 0.471191 1.66993 0.471191 3.72285V10.5499C0.471191 12.6082 2.14112 14.2727 4.19806 14.2727H11.0197C13.0753 14.2727 14.7466 12.6082 14.7466 10.5499V3.72285C14.7466 1.67127 13.0753 0 11.0197 0ZM11.0197 12.4849H4.19806C3.13076 12.4849 2.26432 11.6158 2.26432 10.5512V3.72419C2.26432 2.65956 3.13076 1.79715 4.19806 1.79715H11.0197C12.087 1.79715 12.9535 2.6609 12.9535 3.72419V10.5512C12.9535 11.6145 12.087 12.4849 11.0197 12.4849Z" fill="currentColor"/>
+                    <path d="M7.60887 3.11084C5.38989 3.11084 3.58203 4.9187 3.58203 7.14036C3.58203 9.35532 5.38989 11.1645 7.60887 11.1645C9.83053 11.1645 11.6357 9.35666 11.6357 7.14036C11.6357 4.9187 9.83053 3.11084 7.60887 3.11084ZM7.60887 9.36871C6.37551 9.36871 5.37784 8.37372 5.37784 7.14036C5.37784 5.90699 6.37551 4.90665 7.60887 4.90665C8.83822 4.90665 9.84259 5.90833 9.84259 7.14036C9.84392 8.37238 8.83822 9.36871 7.60887 9.36871Z" fill="currentColor"/>
+                    <path d="M11.3573 2.35962C10.8256 2.35962 10.3931 2.79752 10.3931 3.32381C10.3931 3.85546 10.8256 4.29336 11.3573 4.29336C11.8862 4.29336 12.3215 3.85546 12.3215 3.32381C12.3215 2.79752 11.8862 2.35962 11.3573 2.35962Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-block__link social-block__link--vk" href="#" aria-label="Мы ВКонтакте">
+                  <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1234 4.9002C14.1234 4.9002 16.3623 1.72708 16.5866 0.680242C16.6595 0.312285 16.4947 0.103188 16.1069 0.103188C16.1069 0.103188 14.8193 0.103188 14.168 0.103188C13.7235 0.103188 13.5587 0.293278 13.4235 0.579768C13.4235 0.579768 12.3724 2.82553 11.0969 4.24712C10.6861 4.70333 10.4781 4.84318 10.2511 4.84318C10.0646 4.84318 9.98625 4.6911 9.98625 4.27834V0.649016C9.98625 0.147997 9.92545 0.00135496 9.5066 0.00135496H6.39628C6.15578 0.00135496 6.0085 0.134417 6.0085 0.324506C6.0085 0.801084 6.73406 0.908351 6.73406 2.20231V4.87305C6.73406 5.40529 6.70569 5.61575 6.45303 5.61575C5.78016 5.61575 4.19528 3.30618 3.30623 0.678887C3.12923 0.145282 2.93737 0 2.43475 0H0.486409C0.205373 0 0 0.190085 0 0.476576C0 0.991172 0.60666 3.40801 2.99277 6.64358C4.59927 8.8201 6.70569 10 8.60269 10C9.76196 10 10.0416 9.80312 10.0416 9.31432V7.63883C10.0416 7.22607 10.2065 7.04956 10.4429 7.04956C10.7078 7.04956 11.1847 7.13238 12.2805 8.22268C13.5843 9.47862 13.6762 10 14.3896 10H16.5676C16.7919 10 17 9.89273 17 9.52342C17 9.02919 16.3623 8.15343 15.384 7.10659C14.9801 6.56755 14.3302 5.98914 14.1248 5.72301C13.8275 5.40801 13.9154 5.23014 14.1234 4.9002Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+
+    <section class="animation-screen"></section>
+
+    <section class="screen screen--hidden screen--intro" id="top">
+      <div class="screen__wrapper">
+        <div class="intro">
+          <h1 class="intro__title">Таинственный отпуск</h1>
+          <div class="intro__content">
+            <div class="intro__info">
+              <p class="intro__label">Даты проведения конкурса:</p>
+              <p class="intro__date">01 — 31.05 / 2020</p>
+            </div>
+            <div class="intro__message">
+              <p>
+                Отгадай первым место назначения и&nbsp;отправься в&nbsp;путешествие в&nbsp;любое время или получи один из многочисленных призов
+                <svg width="16" height="16" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z" fill="currentColor"/>
+                </svg>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen__footer js-footer">
+        <button class="screen__footer-enlarge js-footer-toggler" type="button" aria-label="Показать сообщение">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <button class="screen__footer-collapse js-footer-toggler" type="button" aria-label="Скрыть сообщение">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="12.3536" y1="0.353553" x2="0.738349" y2="11.9688" stroke="currentColor"/>
+            <line x1="0.738319" y1="0.539925" x2="12.3535" y2="12.1551" stroke="currentColor"/>
+          </svg>
+        </button>
+        <div class="screen__footer-wrapper">
+          <div class="screen__footer-announce">
+            <p class="screen__footer-label">Даты проведения конкурса:</p>
+            <p class="screen__footer-date">01 — 31.05 / 2020</p>
+          </div>
+          <div class="screen__footer-note">
+            <p>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z" fill="currentColor"/>
+              </svg>
+              <span>Победители могут выбрать любые 14 дней подряд в&nbsp;течение двух лет с&nbsp;даты окончания конкурса. Победители могут воспользоваться путевкой сами или подарить другому лицу.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen screen--hidden screen--story" id="story">
+
+      <div class="slider swiper-container js-slider">
+
+        <div class="swiper-wrapper">
+
+          <div class="slider__item swiper-slide">
+            <h2 class="slider__item-title">История</h2>
+            <p class="slider__item-text">Джеймс Таргет был основателем компании &laquo;Fjord Inc.&raquo;. С&nbsp;1965 года &laquo;Fjord Inc.&raquo; прославилась надёжными и&nbsp;удобными чемоданами и&nbsp;аксессуарами для туристов.</p>
+          </div>
+
+          <div class="slider__item swiper-slide">
+            <p class="slider__item-text">Когда Джеймсу было 7&nbsp;лет, в&nbsp;их&nbsp;доме гостил дядюшка и&nbsp;развлекал детей рассказами о&nbsp;своей поездке в&nbsp;место, показавшееся малышу Таргету невероятным. Тогда Джеймс решил, что однажды посетит его, но&nbsp;не&nbsp;будет рассказывать о&nbsp;мечте, пока не&nbsp;осуществит.</p>
+          </div>
+
+          <div class="slider__item swiper-slide">
+            <p class="slider__item-text">Джеймс Таргет стал увлеченным путешественником. Он&nbsp;посетил 5&nbsp;континентов, 126&nbsp;стран.</p>
+          </div>
+
+          <div class="slider__item swiper-slide">
+            <p class="slider__item-text">Он&nbsp;сплавлялся по&nbsp;Амазонке и&nbsp;погружался в&nbsp;пещеры Франции, медитировал в&nbsp;горах Тибета и&nbsp;пожимал руку вождя племени Акугауа.</p>
+          </div>
+
+          <div class="slider__item swiper-slide">
+            <p class="slider__item-text">Из&nbsp;своих поездок Джеймс Таргет привозил идеи, как сделать свои чемоданы &laquo;Fjord Inc.&raquo; удобными и&nbsp;приспособленными к&nbsp;разным дорожным условиям.</p>
+          </div>
+
+          <div class="slider__item swiper-slide">
+            <p class="slider__item-text">Всё это время Джеймс не&nbsp;оставлял идею поездки своей мечты. Однако, как только он&nbsp;брался за&nbsp;планирование, возникали препятствия, не&nbsp;позволяющие отправиться туда.</p>
+          </div>
+
+          <div class="slider__item swiper-slide">
+            <p class="slider__item-text">В&nbsp;возрасте 67&nbsp;лет Джеймс Таргет попал под лавину и&nbsp;погиб. В&nbsp;своём завещании он&nbsp;поручил отправить в&nbsp;заветное путешествие трёх смельчаков, единых с&nbsp;ним духом.</p>
+          </div>
+
+          <div class="slider__item swiper-slide">
+            <p class="slider__item-text">Тех, кто сможет узнать таинственное место, задавая вопросы специально обученному ИИ&nbsp;&laquo;Соне&raquo;, ждет фантастическое путешествие.</p>
+          </div>
+        </div>
+        <div class="slider__controls">
+          <button class="slider__control slider__control--prev js-control-prev" type="button" aria-label="Показать предыдущую историю">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11L11 21" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="slider__control slider__control--next js-control-next" type="button" aria-label="Показать следующую историю">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L11 11L1 21" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="slider__pagination swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="screen screen--hidden screen--prizes" id="prizes">
+      <div class="screen__wrapper">
+        <div class="prizes">
+          <h2 class="prizes__title">ПРизы</h2>
+          <div class="prizes__lead">
+            <p>Найди ответ и&nbsp;получи один из&nbsp;призов:</p>
+          </div>
+          <ul class="prizes__list">
+            <li class="prizes__item prizes__item--journeys">
+              <div class="prizes__icon">
+                <picture>
+                  <source srcset="img/prize1-mob.svg" media="(orientation: portrait)">
+                  <img src="img/prize1.svg" alt="">
+                </picture>
+              </div>
+              <p class="prizes__desc">
+                <b>3</b>
+                <span>загадочных путешествия</span>
+              </p>
+            </li>
+            <li class="prizes__item prizes__item--cases">
+              <div class="prizes__icon">
+                <picture>
+                  <source srcset="img/prize2-mob.svg" media="(orientation: portrait)">
+                  <img src="img/prize2.svg" alt="">
+                </picture>
+              </div>
+              <p class="prizes__desc">
+                <b>7</b>
+                <span>надежных чемоданов</span>
+              </p>
+            </li>
+            <li class="prizes__item prizes__item--codes">
+              <div class="prizes__icon">
+                <picture>
+                  <source srcset="img/prize3-mob.svg" media="(orientation: portrait)">
+                  <img src="img/prize3.svg" alt="">
+                </picture>
+              </div>
+              <p class="prizes__desc">
+                <b>900</b>
+                <span>
+                  промокодов на&nbsp;скидку 15%
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z" fill="currentColor"/>
+                  </svg>
+                </span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="screen__footer js-footer">
+        <button class="screen__footer-enlarge js-footer-toggler" type="button" aria-label="Показать сообщение">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <button class="screen__footer-collapse js-footer-toggler" type="button" aria-label="Скрыть сообщение">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="12.3536" y1="0.353553" x2="0.738349" y2="11.9688" stroke="currentColor"/>
+            <line x1="0.738319" y1="0.539925" x2="12.3535" y2="12.1551" stroke="currentColor"/>
+          </svg>
+        </button>
+        <div class="screen__footer-wrapper">
+          <div class="screen__footer-announce">
+            <p class="screen__footer-label">Даты проведения конкурса:</p>
+            <p class="screen__footer-date">01 — 31.05 / 2020</p>
+          </div>
+          <div class="screen__footer-note">
+            <p>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z" fill="currentColor"/>
+              </svg>
+              <span>Скидка&nbsp;15% на&nbsp;единоразовое приобретение путёвки с&nbsp;1&nbsp;июня 2020 по&nbsp;31&nbsp;мая 2022&nbsp;года. Суммируется с&nbsp;другими акциями</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen screen--hidden screen--rules" id="rules">
+      <div class="screen__wrapper">
+        <div class="rules">
+          <h2 class="rules__title">Правила</h2>
+          <div class="rules__lead">
+            <p>Для того чтобы получить наследство Джеймса Таргета, тебе нужно выведать у&nbsp;&laquo;Сони&raquo;, куда предстоит отправиться тебе в&nbsp;случае победы</p>
+          </div>
+          <ol class="rules__list">
+            <li class="rules__item">
+              <p>Тебе отводится <br>5&nbsp;минут</p>
+            </li>
+            <li class="rules__item">
+              <p>Задавай любые вопросы в&nbsp;текстовом поле</p>
+            </li>
+            <li class="rules__item">
+              <p>Нажимай кнопку &laquo;Узнать&raquo;, чтобы получить ответ</p>
+            </li>
+            <li class="rules__item">
+              <p>&laquo;Соня&raquo; может отвечать только&nbsp;Да или Нет</p>
+            </li>
+          </ol>
+          <a href="#game" class="rules__link btn">Погнали!</a>
+        </div>
+      </div>
+      <div class="screen__disclaimer">
+        <div class="disclaimer">
+          <ul>
+            <li>
+              <a href="#">Правовая информация</a>
+            </li>
+            <li>
+              <a href="#">Подробные правила</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen screen--hidden screen--game" id="game">
+      <div class="screen__wrapper">
+        <div class="game">
+          <div class="game__header">
+            <h2 class="game__title">Игра</h2>
+            <div class="game__counter">
+              <span>05</span>:<span>00</span>
+            </div>
+          </div>
+          <div class="game__body">
+            <div class="chat">
+              <div class="chat__body js-chat">
+                <ul class="chat__list" id="messages"></ul>
+              </div>
+              <div class="chat__footer">
+                <form action="#" method="post" class="form" id="message-form">
+                  <label for="message-field" class="visually-hidden">Поле для ввода вопроса</label>
+                  <input type="text" class="form__field" id="message-field">
+                  <button class="form__button btn">
+                    Узнать
+                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="currentColor" stroke-width="2" d="M9 19V1"/>
+                      <path d="M1 9l8-8 8 8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- временные кнопки для показа результата -->
+          <div class="game__buttons">
+            <button class="game__button btn js-show-result" type="button" data-target="result">Положительный результат</button>
+            <button class="game__button btn js-show-result" type="button" data-target="result2">Положительный результат - 2</button>
+            <button class="game__button btn js-show-result" type="button" data-target="result3">Отрицательный результат</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen screen--hidden screen--result" id="result">
+      <div class="screen__wrapper">
+        <div class="result result--trip">
+          <div class="result__image">
+            <picture>
+              <source srcset="img/result1-mob.png 1x, img/result1-mob@2x.png 2x" media="(max-width: 768px) and (orientation: portrait)">
+              <img src="img/result1.png" srcset="img/result1@2x.png 2x" alt="">
+            </picture>
+          </div>
+          <h2 class="result__title">
+            <span class="visually-hidden">ПОбеда!</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568.85 109.24">
+              <path d="M16,24.44V92H2.6V8H75V92H61.52V24.44H16Z" transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M148.76,5.6c32.88,0,59.52,19.92,59.52,44.4s-26.64,44.4-59.52,44.4S89.24,74.48,89.24,50,115.88,5.6,148.76,5.6Zm0,72.12c24.48,0,44.4-12.36,44.4-27.72s-19.92-27.84-44.4-27.84C124,22.16,104,34.52,104,50S124,77.72,148.76,77.72Z"
+                transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M287.36,8V24.44H236v14.4h25.32c25.44,0,34,11.16,34,26.52,0,15.6-8.52,26.64-34,26.64H222.56V8h64.8ZM256.88,76.52c15.12,0,23.52-2,23.52-11.52S272,54.44,256.88,54.44H236V76.52h20.88Z"
+                transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+              <path d="M371.47,8V24.44H320.84V41.6h33.6V58h-33.6V75.56h50.64V92H307.4V8h64.08Z" transform="translate(-2.1 -1.5)"
+                    fill="none" stroke="currentColor"/>
+              <path
+                d="M382.39,110.24V75.56h7.44c4.56-4.68,7.8-18.36,8.76-56L399,8h48.6V75.56h10v34.68H442.87V92H397v18.24H382.39Zm51.72-34.68V24.44H411.55v3.12c-0.48,22.44-3.24,37.68-7.2,48h29.76Z"
+                transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M463.75,92l28-84h27.12l28.08,84H533.47l-7.8-23.52h-37.8L480.07,92H463.75Zm56.64-40L507,11.84,493.51,52h26.88Z"
+                transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M554.12,70.4L555.55,2H569l1.44,68.4H554.12Zm8.28,6.36c4.8,0,8,3.24,8,8.16a8,8,0,1,1-16.08,0C554.35,80,557.59,76.76,562.39,76.76Z"
+                transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+            </svg>
+          </h2>
+          <div class="result__text">
+            <p>ты&nbsp;отправляешься в&nbsp;Арктику!</p>
+          </div>
+          <div class="result__form">
+            <form action="#" method="post" class="form form--result">
+              <label for="email-field" class="form__label">зарегистрируй результат</label>
+              <input type="email" class="form__field" id="email-field" placeholder="e-mail для регистации результата и получения приза" required>
+              <button class="form__button btn">
+                отправить
+                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="currentColor" stroke-width="2" d="M9 19V1"/>
+                  <path d="M1 9l8-8 8 8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen screen--hidden screen--result" id="result2">
+      <div class="screen__wrapper">
+        <div class="result result--prize">
+          <div class="result__image">
+            <picture>
+              <source srcset="img/result2-mob.png 1x, img/result2-mob@2x.png 2x" media="(max-width: 768px) and (orientation: portrait)">
+              <img src="img/result2.png" srcset="img/result2@2x.png 2x" alt="">
+            </picture>
+          </div>
+          <h2 class="result__title">
+            <span class="visually-hidden">ПОбеда!</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568.85 109.24">
+              <path d="M16,24.44V92H2.6V8H75V92H61.52V24.44H16Z" transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M148.76,5.6c32.88,0,59.52,19.92,59.52,44.4s-26.64,44.4-59.52,44.4S89.24,74.48,89.24,50,115.88,5.6,148.76,5.6Zm0,72.12c24.48,0,44.4-12.36,44.4-27.72s-19.92-27.84-44.4-27.84C124,22.16,104,34.52,104,50S124,77.72,148.76,77.72Z"
+                transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M287.36,8V24.44H236v14.4h25.32c25.44,0,34,11.16,34,26.52,0,15.6-8.52,26.64-34,26.64H222.56V8h64.8ZM256.88,76.52c15.12,0,23.52-2,23.52-11.52S272,54.44,256.88,54.44H236V76.52h20.88Z"
+                transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+              <path d="M371.47,8V24.44H320.84V41.6h33.6V58h-33.6V75.56h50.64V92H307.4V8h64.08Z" transform="translate(-2.1 -1.5)"
+                    fill="none" stroke="currentColor"/>
+              <path
+                d="M382.39,110.24V75.56h7.44c4.56-4.68,7.8-18.36,8.76-56L399,8h48.6V75.56h10v34.68H442.87V92H397v18.24H382.39Zm51.72-34.68V24.44H411.55v3.12c-0.48,22.44-3.24,37.68-7.2,48h29.76Z"
+                transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M463.75,92l28-84h27.12l28.08,84H533.47l-7.8-23.52h-37.8L480.07,92H463.75Zm56.64-40L507,11.84,493.51,52h26.88Z"
+                transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M554.12,70.4L555.55,2H569l1.44,68.4H554.12Zm8.28,6.36c4.8,0,8,3.24,8,8.16a8,8,0,1,1-16.08,0C554.35,80,557.59,76.76,562.39,76.76Z"
+                transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+            </svg>
+          </h2>
+          <div class="result__text">
+            <p>чемодан &laquo;Fjord&nbsp;Inc.&raquo;&nbsp;твой</p>
+          </div>
+          <div class="result__form">
+            <form action="#" method="post" class="form form--result">
+              <label for="email-field2" class="form__label">зарегистрируй результат</label>
+              <input type="email" class="form__field" id="email-field2" placeholder="e-mail для регистации результата и получения приза" required>
+              <button class="form__button btn">
+                отправить
+                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="currentColor" stroke-width="2" d="M9 19V1"/>
+                  <path d="M1 9l8-8 8 8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen screen--hidden screen--result" id="result3">
+      <div class="screen__wrapper">
+        <div class="result result--negative">
+          <div class="result__image">
+            <picture>
+              <source srcset="img/result3-mob.png 1x, img/result3-mob@2x.png 2x" media="(max-width: 768px) and (orientation: portrait)">
+              <img src="img/result3.png" srcset="img/result3@2x.png 2x" alt="">
+            </picture>
+          </div>
+          <h2 class="result__title">
+            <span class="visually-hidden">Не угадал!</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660.77 109.24">
+              <path d="M2.66,92V8H16.1V42.2H53.3V8H66.74V92H53.3V58.64H16.1V92H2.66Z" transform="translate(-2.16 -1.5)"
+                    fill="none" stroke="currentColor"/>
+              <path d="M147.62,8V24.44H97V41.6h33.6V58H97V75.56h50.64V92H83.54V8h64.08Z" transform="translate(-2.16 -1.5)"
+                    fill="none" stroke="currentColor"/>
+              <path d="M199.22,8l20.52,42.36L235.34,8h16.44l-31,84H204.38l9.48-25.92L185.78,8h13.44Z"
+                    transform="translate(-2.16 -1.5)" fill="none" stroke="currentColor"/>
+              <path d="M273.74,24.44V92H260.3V8h50.16V24.44H273.74Z" transform="translate(-2.16 -1.5)" fill="none"
+                    stroke="currentColor"/>
+              <path
+                d="M307.1,92l28-84h27.12l28.08,84H376.82L369,68.48h-37.8L323.42,92H307.1Zm56.64-40L350.3,11.84,336.86,52h26.88Z"
+                transform="translate(-2.16 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M396.38,110.24V75.56h7.44c4.56-4.68,7.8-18.36,8.76-56L412.94,8h48.6V75.56h10v34.68H456.86V92H411v18.24H396.38ZM448.1,75.56V24.44H425.54v3.12c-0.48,22.44-3.24,37.68-7.2,48H448.1Z"
+                transform="translate(-2.16 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M477.74,92l28-84h27.12L560.9,92H547.46l-7.8-23.52h-37.8L494.06,92H477.74Zm56.64-40-13.44-40.2L507.5,52h26.88Z"
+                transform="translate(-2.16 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M568.7,76.88a13.77,13.77,0,0,0,5,1c6.6,0,10.44-6.24,12-58.32L586.22,8h46.2V92H619V24.44H598.82l-0.12,3.12C597.14,81,589,94.4,573.74,94.4a28.55,28.55,0,0,1-6.72-.84Z"
+                transform="translate(-2.16 -1.5)" fill="none" stroke="currentColor"/>
+              <path
+                d="M646.1,70.4L647.54,2H661l1.44,68.4H646.1Zm8.28,6.36c4.8,0,8,3.24,8,8.16a8,8,0,0,1-16.08,0C646.34,80,649.58,76.76,654.38,76.76Z"
+                transform="translate(-2.16 -1.5)" fill="none" stroke="currentColor"/>
+            </svg>
+          </h2>
+          <button class="result__button js-play" type="button">
+            не сдавайся!
+            <span>
+              <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.6899 1.47998C5.42992 1.47998 1.16992 5.73998 1.16992 11C1.16992 16.26 5.42992 20.52 10.6899 20.52C15.9499 20.52 20.2099 16.26 20.2099 11V7.13998" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M15.1099 12.5099L20.1499 7.13989L25.3099 12.6299" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

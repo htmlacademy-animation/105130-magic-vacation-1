@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568.85 109.24">
+  <path d="M16,24.44V92H2.6V8H75V92H61.52V24.44H16Z" transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+  <path
+    d="M148.76,5.6c32.88,0,59.52,19.92,59.52,44.4s-26.64,44.4-59.52,44.4S89.24,74.48,89.24,50,115.88,5.6,148.76,5.6Zm0,72.12c24.48,0,44.4-12.36,44.4-27.72s-19.92-27.84-44.4-27.84C124,22.16,104,34.52,104,50S124,77.72,148.76,77.72Z"
+    transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+  <path
+    d="M287.36,8V24.44H236v14.4h25.32c25.44,0,34,11.16,34,26.52,0,15.6-8.52,26.64-34,26.64H222.56V8h64.8ZM256.88,76.52c15.12,0,23.52-2,23.52-11.52S272,54.44,256.88,54.44H236V76.52h20.88Z"
+    transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+  <path d="M371.47,8V24.44H320.84V41.6h33.6V58h-33.6V75.56h50.64V92H307.4V8h64.08Z" transform="translate(-2.1 -1.5)"
+        fill="none" stroke="currentColor"/>
+  <path
+    d="M382.39,110.24V75.56h7.44c4.56-4.68,7.8-18.36,8.76-56L399,8h48.6V75.56h10v34.68H442.87V92H397v18.24H382.39Zm51.72-34.68V24.44H411.55v3.12c-0.48,22.44-3.24,37.68-7.2,48h29.76Z"
+    transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+  <path
+    d="M463.75,92l28-84h27.12l28.08,84H533.47l-7.8-23.52h-37.8L480.07,92H463.75Zm56.64-40L507,11.84,493.51,52h26.88Z"
+    transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+  <path
+    d="M554.12,70.4L555.55,2H569l1.44,68.4H554.12Zm8.28,6.36c4.8,0,8,3.24,8,8.16a8,8,0,1,1-16.08,0C554.35,80,557.59,76.76,562.39,76.76Z"
+    transform="translate(-2.1 -1.5)" fill="none" stroke="currentColor"/>
+</svg>
